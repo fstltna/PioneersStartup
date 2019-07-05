@@ -10,8 +10,9 @@ These start up the Pioneers game server at boot time with a "screen" process.
 
 1. Copy **pioneers** into **/etc/init.d** - make sure it is executable
 2. Copy **startpioneers** into **/OurPioneers** - make sure it is executable
-3. Run "**systemctl enable pioneers**" (only needed once, will stick)
-4. Run "**systemctl start pioneers**" - starts Pioneers without restarting the whole server
+3. Copy **startpioneers-server-console** into **/OurPioneers** - make sure it is executable
+4. Run "**systemctl enable pioneers**" (only needed once, will stick)
+5. Run "**systemctl start pioneers**" - starts Pioneers without restarting the whole server
 
 When you want to view the Pioneers console, just enter "**screen -r**" in your shell.
 

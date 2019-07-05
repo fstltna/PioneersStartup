@@ -1,0 +1,4 @@
+#!/bin/bash
+/usr/games/pioneers-server-console -a 7654 -c 3 -P 8 -p 7653 -R 0 -r -T 1
+exit 0
+
