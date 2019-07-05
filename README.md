@@ -9,8 +9,8 @@ Official support sites: [Official Github Repo](https://github.com/fstltna/Pionee
 These start up the Pioneers game server at boot time with a "screen" process.
 
 1. Copy **pioneers** into **/etc/init.d** - make sure it is executable
-2. Copy **startpioneers** into **/OurPioneers** - make sure it is executable
-3. Copy **startpioneers-server-console** into **/OurPioneers** - make sure it is executable
+2. Copy **startpioneers** into **/root/OurPioneers** - make sure it is executable
+3. Copy **startpioneers-server-console** into **/root/OurPioneers** - make sure it is executable
 4. Run "**systemctl enable pioneers**" (only needed once, will stick)
 5. Run "**systemctl start pioneers**" - starts Pioneers without restarting the whole server
 
@@ -20,7 +20,7 @@ To disconnect from the Pioneers console just press **CTRL-A CTRL-D**. This will 
 
 I have only tested this on a Ubuntu 16.04 server...
 
-If you want to turn off the server respawning type "**touch /OurPioneers/nostart**". To reenable it type "**rm /OurPioneers/nostart**".
+If you want to turn off the server respawning type "**touch /root/OurPioneers/nostart**". To reenable it type "**rm /root/OurPioneers/nostart**".
 
 ---
 Note: If you don't already have the "screen" tool installed you will need to install it by "**sudo apt-get install screen**".
